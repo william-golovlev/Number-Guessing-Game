@@ -1,5 +1,5 @@
 #This is a guessing the number game, I wanted to test out Python.
-import random
+import random, sys
 
 print('Welcome to my first Python program. What\'s your name?')
 name = input()
@@ -24,4 +24,6 @@ if guess == secretNum:
     print('Good job, ' + name + '! You guessed the number ' + str(secretNum) + ' in ' + str(guesses) + ' guesses.')
 else:
     print('Nope, the number I was thinking of was ' + str(secretNum) + ', you lose.')
+
+sys.exit()
 
